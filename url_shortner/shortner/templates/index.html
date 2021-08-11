@@ -1,6 +1,7 @@
 <head>
     <script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
     <style>
+ 
 
         *,
 *::before,
@@ -97,7 +98,7 @@ section {
         csrfmiddlewaretoken:$('input[name=csrfmiddlewaretoken]').val(),
       },
       success: function(data){
-        $('h2').html("www.surls.ga/"+data)
+        $('h2').html("localhost:8000/"+data)
       }
     });
   });
